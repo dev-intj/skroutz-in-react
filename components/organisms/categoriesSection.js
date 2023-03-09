@@ -1,5 +1,5 @@
 export const CategoriesSection = ({title}) => {
     return (
-        <div>categories section with title: {title}</div>
+        <div className="subcategory">{title}</div>
     )
 }

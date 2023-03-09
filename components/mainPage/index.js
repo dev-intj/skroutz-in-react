@@ -10,7 +10,7 @@ export const MainPage = () => {
   return (
     <div className="h-full flex flex-col gap-4">
       <div className="flex flex-col gap-4">
-        <h1 className="text-center text-bold text-5xl">Skroutz</h1>
+        <h1 className="title">Skroutz</h1>
         <SearchBar />
       </div>
       <NewsCarousel />

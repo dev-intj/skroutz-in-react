@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return (
-    <nav className="px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav className="px-2 bg-transparent border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#" className="flex items-center">
           <img
@@ -35,7 +35,7 @@ export const NavBar = () => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
                 href="#"
@@ -68,7 +68,7 @@ export const NavBar = () => {
               </button>
               <div
                 id="dropdownNavbar"
-                className="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+                className="hidden z-10 w-44 font-normal bg-transparent rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
               >
                 <ul
                   className="py-1 text-sm text-gray-700 dark:text-gray-400"
