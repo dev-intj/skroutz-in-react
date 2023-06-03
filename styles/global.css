@@ -2,19 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components  {
-    .page{
-      background-color: #f1f1f1
-    }
-
-    .title {
-      @apply text-center font-bold text-5xl;
-        color: #f68b24;
-    }
-
-    .subcategory{
-      @apply text-center font-bold text-5xl;
-      color: #f68b24;
-    }
+@layer components {
+  .page {
+    background-color: #f1f1f1;
   }
+
+  .title {
+    @apply text-center font-bold text-5xl;
+    color: #f68b24;
+  }
+
+  .subcategory {
+    @apply text-center font-bold text-5xl;
+    color: #f68b24;
+  }
+}

@@ -1,5 +1,3 @@
 export const DesktopFooter = () => {
-    return (
-        <>desktop footer</>
-    )
-}
+  return <>desktop footer</>;
+};

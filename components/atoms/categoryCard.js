@@ -1,5 +1,3 @@
 export const CategoryCard = () => {
-    return (
-        <>category card</>
-    )
-}
+  return <>category card</>;
+};

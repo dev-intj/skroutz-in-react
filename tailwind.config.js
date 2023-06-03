@@ -6,10 +6,9 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {}
+    extend: {},
   },
   variants: {},
   plugins: [],
-  variants: {
-  },
+  variants: {},
 };

@@ -1,5 +1,3 @@
 export const NavFooter = () => {
-    return (
-        <>nav footer</>
-    )
-}
+  return <>nav footer</>;
+};

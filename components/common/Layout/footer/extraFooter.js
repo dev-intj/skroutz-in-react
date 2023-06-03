@@ -1,5 +1,3 @@
 export const ExtraFooter = () => {
-    return (
-        <>extra footer</>
-    )
-}
+  return <>extra footer</>;
+};
