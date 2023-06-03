@@ -9,7 +9,7 @@
     }
 
     .title {
-        @apply text-center font-bold text-5xl;
+      @apply text-center font-bold text-5xl;
         color: #f68b24;
     }
 
