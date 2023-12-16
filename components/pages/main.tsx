@@ -43,7 +43,9 @@ const MainPage = () => {
             }
           />
           {Array.from(Array(100).keys()).map((item, index) => (
-            <div className="h-24 bg-green-400">s</div>
+            <div className="h-24 bg-green-400" key={index}>
+              s
+            </div>
           ))}
         </div>
       </div>

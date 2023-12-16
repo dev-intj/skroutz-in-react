@@ -7,7 +7,7 @@ const ProductsShowCase = ({ title, redirectButton, showStars }: any) => {
       <div className="relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0">
         <div className="flex flex-row gap-4">
           {Array.from(Array(13).keys()).map((item, index) => (
-            <ProductItem />
+            <ProductItem key={index} />
           ))}
         </div>
       </div>
