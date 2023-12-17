@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+<pre>
+     _                    _       
+ ___| | ___ __ ___  _   _| |_ ____
+/ __| |/ / '__/ _ \| | | | __|_  /
+\__ \   <| | | (_) | |_| | |_ / / 
+|___/_|\_\_|  \___/ \__,_|\__/___|
+                                  
+---------------------------------------------------
+Skroutz website made in React with Nextjs/Redux/Tailwind
+</pre>
 
-## Getting Started
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Started this project to improve skills on React and Redux,
+
+## Development setup
+
+Install packages for this repo. ( I recommend yarn )
+
+```sh
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(or)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Run the website locally
 
-## Learn More
+Running this project locally for devs.
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(or)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+npm run dev
+```
 
-## Deploy on Vercel
+## Meta
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+C. Dematas – demataschristiano@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT license. See `LICENSE` for more information.
+
+[https://github.com/dev-intj/](https://github.com/dev-intj/)
+
+## Contributing
+
+1. Fork it (<https://github.com/dev-intj/skroutz-in-react/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
