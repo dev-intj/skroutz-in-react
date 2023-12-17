@@ -1,34 +1,30 @@
 {
-  "name": "skroutz",
+  "name": "loans",
   "version": "0.1.0",
-  "homepage": "https://dev-intj.github.io/skroutz-in-react",
-  "private": false,
+  "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.0.4",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^9.3.0",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "gh-pages": "^6.1.0",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5"
+    "@fullpage/react-fullpage": "^0.1.40",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "animejs": "^3.2.1",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-curved-text": "^2.0.2",
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-scroll-parallax": "^3.4.2",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   }
 }
