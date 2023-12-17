@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,18 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "Proxima Nova",
+          ...defaultTheme.fontFamily.sans,
+        ],
+      },
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      fontFamily: {
-        ocalla: ["Ocalla", "cursive"],
-        asher: ["Asher", "sans-serif"],
-        moki: ["Moki", "cursive"],
-        sticky: ["Sticky", "cursive"],
-        typold: ["Typold", "sans-serif"],
       },
     },
   },
