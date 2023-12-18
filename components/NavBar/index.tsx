@@ -25,10 +25,12 @@ const NavBar = () => {
         navbarRef.current,
         {
           opacity: 0,
+          y: -150,
         },
         {
           opacity: 1,
-          duration: 0.1,
+          y: 0,
+          duration: 0.4,
         }
       )
       .progress(1);
@@ -46,7 +48,7 @@ const NavBar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32"
+      className="shadow-xl z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32"
     >
       <div className="flex flex-row gap-16 items-center justify-between w-full">
         <div className="relative h-32 min-w-[11rem]">
