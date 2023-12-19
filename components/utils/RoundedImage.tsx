@@ -4,11 +4,11 @@ const ImportedImage = ({
 }: any) => {
   return (
     <div
-      className={`relative rounded-lg overflow-hidden ${width}`}
+      className={`flex items-center overflow-hidden bg-gray-400 rounded-full ${width}`}
     >
       <img
         src={src}
-        className="h-auto max-w-full rounded-full"
+        className="h-auto max-w-full rounded-full mt-auto"
       />
     </div>
   );

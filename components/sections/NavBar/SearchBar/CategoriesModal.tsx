@@ -1,4 +1,9 @@
-import { Dispatch, SetStateAction } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  useRef,
+  useEffect,
+} from "react";
 import ReactPortal from "@/components/utils/ReactPortal";
 
 import CategoryItem from "@/components/CategoryItem";
@@ -20,6 +25,52 @@ const CategoriesModal = ({
   if (!isOpen) {
     return;
   }
+
+  const modalRef: any = useRef(null);
+
+  // duplicated code in case I wanna change behavior
+  useEffect(() => {
+    // listen to clicks outside of modal
+    function handleClickOutside(event: any) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    }
+
+    // listen to scrolls outside of modal
+    function handleScrollOutside(event: any) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener(
+      "mousedown",
+      handleClickOutside
+    );
+    document.addEventListener(
+      "scroll",
+      handleScrollOutside
+    );
+
+    return () => {
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+      document.removeEventListener(
+        "scroll",
+        handleScrollOutside
+      );
+    };
+  }, [modalRef]);
+
   return (
     <ReactPortal wrapperId="react-portal-modal-container">
       <div
@@ -31,7 +82,10 @@ const CategoriesModal = ({
         <div className="fixed z-10 w-screen overflow-y-auto top-[3rem]">
           <div className="flex min-h-full items-end justify-center p-4 text-center">
             <div className="relative transform overflow-hidden rounded-3xl bg-white text-left text-black shadow-2xl transition-all my-16">
-              <div className="h-[48rem] w-[86rem] flex flex-row gap-6 py-8 px-8 divide-x-2 divide-gray-100">
+              <div
+                className="h-[48rem] w-[86rem] flex flex-row gap-6 py-8 px-8 divide-x-2 divide-gray-100"
+                ref={modalRef}
+              >
                 <div className="flex flex-col gap-6 w-2/5 overflow-y-scroll no-scrollbar">
                   {Array.from(
                     Array(10).keys()
