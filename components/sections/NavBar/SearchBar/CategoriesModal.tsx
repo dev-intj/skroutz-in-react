@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import ReactPortal from "../../utils/ReactPortal";
+import ReactPortal from "@/components/utils/ReactPortal";
 
 import CategoryItem from "@/components/CategoryItem";
 

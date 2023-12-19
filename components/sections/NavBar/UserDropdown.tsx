@@ -1,4 +1,4 @@
-import { ImportedImage } from "../utils";
+import { ImportedImage } from "@/components/utils";
 
 const UserDropdown = () => {
   return (

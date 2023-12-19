@@ -1,9 +1,12 @@
+// components
 import FullWidthShowCase from "../FullWidthShowCase";
 import FullWidthShowCaseWithCategories from "../FullWidthShowCaseWithCategories";
-import LeftSideSection from "../LeftSideSection";
-import ProductsShowCase from "../ProductsShowCase";
-import RightHandSection from "../RightHandSection";
 import ShortVideos from "../ShortVideos";
+import ProductsShowCase from "../ProductsShowCase";
+
+// sections
+import LeftSideSection from "@/components/sections/LeftSideSection";
+import RightHandSection from "@/components/sections/RightHandSection";
 
 const MainPage = () => {
   return (

@@ -1,6 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -18,6 +22,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const NavBar = () => {
   const userLoggedIn = true;
+
+  const [isVisible, setIsVisible] =
+    useState(true);
 
   const navbarRef = useRef(null);
 
@@ -48,10 +55,37 @@ const NavBar = () => {
     });
   }, []);
 
+  useEffect(() => {
+    window.addEventListener(
+      "scroll",
+      listenToScroll
+    );
+    return () =>
+      window.removeEventListener(
+        "scroll",
+        listenToScroll
+      );
+  }, []);
+
+  const listenToScroll = () => {
+    let heightToHideFrom = 126 + 5;
+    const winScroll =
+      document.body.scrollTop ||
+      document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+
   return (
     <nav
       ref={navbarRef}
-      className="shadow-xl z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32"
+      className={`${
+        !isVisible && "shadow-xl"
+      } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32`}
     >
       <div className="flex flex-row gap-12 items-center justify-between w-full">
         <div className="relative h-32 min-w-[11rem]">

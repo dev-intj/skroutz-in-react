@@ -1,5 +1,5 @@
 "use client";
-import { ImportedImage } from "../utils";
+import { ImportedImage } from "@/components/utils";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const CategoryItem = ({
