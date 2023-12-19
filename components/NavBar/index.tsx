@@ -21,6 +21,7 @@ const NavBar = () => {
 
   const navbarRef = useRef(null);
 
+  // scroll effect to hide and show navbar on scroll
   useEffect(() => {
     const showNav = gsap
       .fromTo(

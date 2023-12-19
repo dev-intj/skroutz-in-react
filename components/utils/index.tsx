@@ -1,3 +1,4 @@
 import ImportedImage from "./RoundedImage";
+import ReactPortal from "./ReactPortal";
 
-export { ImportedImage };
+export { ImportedImage, ReactPortal };
