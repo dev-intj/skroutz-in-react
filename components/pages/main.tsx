@@ -14,7 +14,7 @@ const MainPage = () => {
       <LeftSideSection />
       <div className="w-3/5 mx-auto pt-36">
         <div className="flex flex-col gap-32">
-          <ShortVideos />
+          <ShortVideos uploadSection={true} />
           <FullWidthShowCase
             title={"100 Χρόνια Παιχνίδι!"}
             subTitle={
