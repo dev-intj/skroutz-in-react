@@ -1,7 +1,7 @@
 const UploadShortVideoItem = () => {
   return (
     <div
-      className="rounded-lg overflow-hidden shadow-lg relative w-[8rem] h-80 bg-blue-100
+      className="rounded-lg overflow-hidden shadow-lg relative min-w-[11rem] h-80 bg-blue-100
     border-blue-300 border-[0.1rem] flex flex-col justify-center items-center gap-4"
       style={{
         background:
