@@ -13,7 +13,7 @@ const MainPage = () => {
     <div className="flex flex-row justify-between px-8">
       <LeftSideSection />
       <div className="w-3/5 mx-auto pt-36">
-        <div className="flex flex-col gap-32">
+         <div className="flex flex-col gap-32 divide-y-2">
           <ShortVideos uploadSection={true} />
           <FullWidthShowCase
             title={"100 Χρόνια Παιχνίδι!"}

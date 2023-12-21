@@ -1,6 +1,10 @@
-const FullWidthShowCase = ({ title, subTitle, link }: any) => {
+const FullWidthShowCase = ({
+  title,
+  subTitle,
+  link,
+}: any) => {
   return (
-    <div className="flex flex-col items-center mx-4 bg-white rounded-3xl shadow md:flex-row h-80">
+    <div className="flex flex-col items-center mx-4 rounded-3xl shadow md:flex-row h-80">
       <a href={link} className="h-full w-1/2">
         <img
           className="object-cover rounded-t-lg h-full w-full rounded-3xl rounded-r-none"
