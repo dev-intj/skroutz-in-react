@@ -90,7 +90,7 @@ const ReactCarousel = ({
 
   return (
     <div className="relative">
-      <div className="absolute left-[-1.4rem] top-[45%] z-10 bg-white rounded-full p-3 shadow-xl">
+      <div className="absolute left-[-1.4rem] top-[45%] z-10 bg-white rounded-full p-3 shadow-xl cursor-pointer">
         <ChevronLeftIcon
           className="w-6 h-6"
           onClick={() =>
@@ -109,7 +109,7 @@ const ReactCarousel = ({
           {children}
         </div>
       </div>
-      <div className="absolute right-[-1.4rem] top-[45%] z-10 bg-white rounded-full p-3 shadow-xl">
+      <div className="absolute right-[-1.4rem] top-[45%] z-10 bg-white rounded-full p-3 shadow-xl cursor-pointer">
         <ChevronRightIcon
           className="w-6 h-6"
           onClick={() =>
