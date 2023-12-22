@@ -4,10 +4,19 @@ import ShortVideoItem from "./item";
 import UploadShortVideoItem from "./uploadItem";
 import { ReactCarousel } from "../utils";
 
+import { HeaderTitle } from "@/components/utils";
+import { PlayIcon } from "@heroicons/react/24/solid";
+
 const ShortVideos = ({ uploadSection }: any) => {
   return (
     <div className="flex flex-col gap-4 px-4">
-      <h4 className="text-xl">Short Videos</h4>
+      <HeaderTitle
+        title={"Short Videos"}
+        iconWrapper="bg-[#f46353] rounded-full p-2"
+        icon={
+          <PlayIcon className="h-4 w-4 text-white" />
+        }
+      />
       <ReactCarousel>
         {uploadSection && (
           <UploadShortVideoItem />

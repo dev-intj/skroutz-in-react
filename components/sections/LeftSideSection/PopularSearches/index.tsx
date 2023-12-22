@@ -1,14 +1,25 @@
-import PopularSearchesItem from "./item";
+"use client";
+import { HeaderTitle } from "@/components/utils";
 
-const PopularSearches = () => {
+import PopularSearchesItem from "./item";
+import { ArrowTrendingUpIcon } from "@heroicons/react/24/solid";
+
+const PopularSearches = ({ items }: any) => {
   return (
     <div className="flex flex-col gap-4">
-      <h4 className="text-xl">Δημοφιλείς αναζητήσεις</h4>
-      <div className="flex flex-row gap-4 flex-wrap">
-        {Array.from(Array(15).keys()).map((item, index) => (
-          <div className="w-24 bg-red-400" key={index}>
-            |
-          </div>
+      <HeaderTitle
+        title={"Δημοφιλείς αναζητήσεις"}
+        iconWrapper="bg-orange-500 rounded-full p-2"
+        icon={
+          <ArrowTrendingUpIcon className="h-4 w-4 text-white" />
+        }
+      />
+      <div className="flex flex-row gap-3 flex-wrap">
+        {items.map((item: any, index: number) => (
+          <PopularSearchesItem
+            key={index}
+            {...item}
+          />
         ))}
       </div>
     </div>

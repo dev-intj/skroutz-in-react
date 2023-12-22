@@ -110,12 +110,43 @@ const categories: any[] = [
   },
 ];
 
+const searches: any[] = [
+  {
+    title: "ps5",
+    href: "",
+  },
+  {
+    title: "air fryer",
+    href: "",
+  },
+  {
+    title: "μπουφάν",
+    href: "",
+  },
+  {
+    title: "αθλητικα παππουτσια αντρικα",
+    href: "",
+  },
+  {
+    title: "ισιωτικη μαλλιων",
+    href: "",
+  },
+  {
+    title: "lego technic",
+    href: "",
+  },
+  {
+    title: "αλυσιδες αυτοκινητου",
+    href: "",
+  },
+];
+
 const LeftSideSection = () => {
   return (
     <div className="w-1/5 sticky top-0 left-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pr-8">
       <div className="flex flex-col gap-16">
         <Categories items={categories} />
-        <PopularSearches />
+        <PopularSearches items={searches} />
       </div>
     </div>
   );
