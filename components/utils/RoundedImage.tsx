@@ -1,10 +1,12 @@
 const ImportedImage = ({
   src = "/",
   width = "w-12 h-12",
+  bgColor = "#ffda00",
 }: any) => {
   return (
     <div
-      className={`flex items-center overflow-hidden bg-gray-400 rounded-full ${width}`}
+      className={`flex items-center overflow-hidden rounded-full ${width}`}
+      style={{ backgroundColor: bgColor }}
     >
       <img
         src={src}

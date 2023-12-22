@@ -2,21 +2,30 @@
 import { ImportedImage } from "@/components/utils";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
+import { isEmpty } from "lodash";
+
 const CategoryItem = ({
+  img = {
+    src: "https://b.scdn.gr/assets/schwartz/timeline/verticals/Home-b27a6579e644348ddb5e689134e687f1.png",
+    alt: "",
+  },
   title = "Categories",
-  link = "https://mdbootstrap.com//img/Photos/Square/1.jpg",
-  imageSrc = "https://b.scdn.gr/assets/schwartz/timeline/verticals/Home-b27a6579e644348ddb5e689134e687f1.png",
-  image = true,
+  link = "/category",
   arrow = false,
+  bgColor = "#ffda00",
 }: any) => {
   return (
     <a
       href={link}
       className="flex flex-row gap-3"
     >
-      {image && (
+      {!isEmpty(img) && (
         <div className="">
-          <ImportedImage src={imageSrc} />
+          <ImportedImage
+            src={img.src}
+            alt={img.alt}
+            bgColor={bgColor}
+          />
         </div>
       )}
       <span className="my-auto text-lg">
