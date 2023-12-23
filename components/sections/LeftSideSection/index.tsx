@@ -143,7 +143,7 @@ const searches: any[] = [
 
 const LeftSideSection = () => {
   return (
-    <div className="w-1/5 sticky top-0 left-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pr-8">
+    <div className="w-1/5 sticky top-0 left-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pr-8 pb-16">
       <div className="flex flex-col gap-16">
         <Categories items={categories} />
         <PopularSearches items={searches} />

@@ -7,7 +7,9 @@ import { ReactCarousel } from "../utils";
 import { HeaderTitle } from "@/components/utils";
 import { PlayIcon } from "@heroicons/react/24/solid";
 
-const ShortVideos = ({ uploadSection }: any) => {
+const ShortVideos = ({
+  uploadSection = false,
+}: any) => {
   return (
     <div className="flex flex-col gap-4 px-4">
       <HeaderTitle

@@ -2,7 +2,7 @@ import FeatureShowCaseItem from "@/components/FeatureShowCaseItem";
 
 const RightHandSection = () => {
   return (
-    <div className="w-1/5 sticky top-0 right-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pl-8">
+    <div className="w-1/5 sticky top-0 right-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pl-8 pb-16">
       <div className="flex flex-col gap-16">
         <FeatureShowCaseItem
           title="Παραγγελίες"
