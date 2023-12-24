@@ -1,6 +1,9 @@
+"use client";
+
 import { isEmpty } from "lodash";
 
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ImportedImage } from "../utils";
 
 // mode = "card" || "categories"
 
@@ -19,7 +22,8 @@ const CardMode = ({
         <div className="h-full w-1/2">
           <img
             className="object-cover h-full w-full rounded-3xl rounded-r-none "
-            src="https://plus.unsplash.com/premium_photo-1664303228186-a61e7dc91597?q=80&w=2192&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={img.src}
+            alt={img.alt}
           />
         </div>
       )}
@@ -30,7 +34,10 @@ const CardMode = ({
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {subTitle}
         </p>
-        <a className="flex flex-row items-center text-blue-400 gap-2 font-bold">
+        <a
+          className="flex flex-row items-center text-blue-400 gap-2 font-bold"
+          href={link}
+        >
           <span>Βρες τα εδώ</span>
           <ChevronRightIcon className="h-4 w-4 text-blue-500 mt-1" />
         </a>
@@ -45,30 +52,56 @@ const CategoriesMode = ({
   link,
   img,
   mode = "card",
+  buttons = [],
 }: any) => {
   return (
     <div
       className={`flex flex-col items-center mx-4 rounded-3xl border`}
     >
       {!isEmpty(img) && (
-        <div className="w-full h-72">
+        <div className="w-full h-44">
           <img
             className="object-cover h-full w-full rounded-3xl rounded-b-none"
-            src="https://plus.unsplash.com/premium_photo-1664303228186-a61e7dc91597?q=80&w=2192&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={img.src}
+            alt={img.alt}
           />
         </div>
       )}
-      <div className="flex flex-col justify-between p-16 leading-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-          {title} - CATEGORIES MODE
+      <div className="flex flex-col justify-between leading-normal text-left w-full p-4">
+        <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900">
+          {title}
         </h5>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {subTitle}
         </p>
-        <a className="flex flex-row items-center text-blue-400 gap-2 font-bold">
-          <span>Βρες τα εδώ</span>
-          <ChevronRightIcon className="h-4 w-4 text-blue-500 mt-1" />
-        </a>
+        {!isEmpty(buttons) && (
+          <div className="flex flex-row gap-2 py-4 flex-wrap">
+            {buttons.map(
+              (button: any, index: number) => (
+                <a
+                  className="flex flex-row gap-2 border rounded-full pl-1 pr-4 py-1 text-sm text-gray-500 border-gray-200 cursor-pointer"
+                  href={button.link}
+                  key={index}
+                >
+                  {!isEmpty(button.img) && (
+                    <div className="">
+                      <ImportedImage
+                        src={button.img.src}
+                        alt={button.img.alt}
+                        width={"h-12 w-12"}
+                        bgColor=""
+                        imgClass="h-full"
+                      />
+                    </div>
+                  )}
+                  <span className="my-auto">
+                    {button.title}
+                  </span>
+                </a>
+              )
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -80,6 +113,7 @@ const FullWidthShowCase = ({
   link,
   img,
   mode = "card",
+  buttons,
 }: any) => {
   return mode === "card" ? (
     <CardMode
@@ -87,6 +121,7 @@ const FullWidthShowCase = ({
       subTitle={subTitle}
       img={img}
       link={link}
+      buttons={buttons}
     />
   ) : (
     <CategoriesMode
@@ -94,6 +129,7 @@ const FullWidthShowCase = ({
       subTitle={subTitle}
       img={img}
       link={link}
+      buttons={buttons}
     />
   );
 };

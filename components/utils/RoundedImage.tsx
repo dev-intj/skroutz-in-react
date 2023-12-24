@@ -2,6 +2,7 @@ const ImportedImage = ({
   src = "/",
   width = "w-12 h-12",
   bgColor = "#ffda00",
+  imgClass = "mt-auto",
 }: any) => {
   return (
     <div
@@ -10,7 +11,7 @@ const ImportedImage = ({
     >
       <img
         src={src}
-        className="h-auto max-w-full rounded-full mt-auto"
+        className={`h-auto max-w-full rounded-full ${imgClass}`}
       />
     </div>
   );
