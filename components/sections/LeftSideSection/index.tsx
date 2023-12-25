@@ -9,22 +9,18 @@ import { get } from "lodash";
 import axios from "axios";
 
 const LeftSideSection = () => {
-  const [categories, setCategories] = useState<
-    any[]
-  >([]);
+  const [categories, setCategories] = useState<any[]>([]);
 
-  const [popularSearches, setPopularSearches] =
-    useState<any[]>([]);
+  const [popularSearches, setPopularSearches] = useState<any[]>([]);
 
   const fetchCategories = async () => {
     try {
-      let api = await axios.get(
-        "/api/categories"
-      );
+      let api = await axios.get("/api/categories");
 
       setCategories(get(api, "data.items", []));
     } catch (e) {
       console.error(e);
+      setCategories([]);
     }
   };
 
@@ -32,11 +28,10 @@ const LeftSideSection = () => {
     try {
       let api = await axios.get("/api/searches");
 
-      setPopularSearches(
-        get(api, "data.items", [])
-      );
+      setPopularSearches(get(api, "data.items", []));
     } catch (e) {
       console.error(e);
+      setPopularSearches([]);
     }
   };
 
@@ -49,9 +44,7 @@ const LeftSideSection = () => {
     <div className="w-1/5 sticky top-0 left-0 max-h-screen overflow-y-auto no-scrollbar pt-36 pr-8 pb-16">
       <div className="flex flex-col gap-16">
         <Categories items={categories} />
-        <PopularSearches
-          items={popularSearches}
-        />
+        <PopularSearches items={popularSearches} />
       </div>
     </div>
   );
