@@ -1,29 +1,20 @@
-const ProductItem = () => {
+const ProductItem = ({
+  img,
+  title,
+  reviews,
+  toPrice,
+}: any) => {
   return (
-    <div className="rounded overflow-hidden shadow-lg relative w-48 h-[28rem]">
-      <div className="h-3/5 bg-red-400">
+    <div className="flex relative flex-col rounded-lg p-0 overflow-hidden border-none w-[14rem]">
+      <a
+        className="flex relative items-center justify-center h-auto p-0 rounded-lg max-h-full overflow-hidden aspect-[3/4]
+        after:absolute after:top-0 after:w-full after:h-full after:rounded-lg after:bg-black after:pointer-events-none after:opacity-5"
+      >
         <img
-          className="w-full h-full rounded-2xl"
-          src="https://plus.unsplash.com/premium_photo-1664392248318-4e1d9361726e?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          className="object-contain inline-block align-middle min-h-[12rem] min-w-[14rem]"
+          src="https://b.scdn.gr/images/sku_main_images/010725/10725017/fixedratio_20161228162638_nef_nef_yperdipli_veloute_loft_grey.jpeg"
         />
-      </div>
-      <div className="h-full flex-col gap-2 bg-blue-400">
-        <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">
-            The Coldest Sunset
-          </div>
-        </div>
-        <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">
-            The Coldest Sunset
-          </div>
-        </div>
-        <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">
-            The Coldest Sunset
-          </div>
-        </div>
-      </div>
+      </a>
     </div>
   );
 };
