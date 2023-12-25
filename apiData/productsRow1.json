@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Frezyderm Diamond Velvet Κρέμα Προσώπου για Ενυδάτωση, Αντιγήρανση & Σύσφιξη με Υαλουρονικό Οξύ 50ml",
+    "reviews": {
+      "stars": 4,
+      "count": 97
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/022324/22324570/large_20210302161524_frezyderm_diamond_velvet_anti_wrinkle_cream_50ml.jpeg",
+      "alt": ""
+    },
+    "toPrice": 38.37,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Vichy Liftactiv Collagen Specialist Ενυδατική & Αντιγηραντική Κρέμα Προσώπου Ημέρας με Βιταμίνη C 50ml",
+    "reviews": {
+      "stars": 4,
+      "count": 134
+    },
+    "img": {
+      "src": "https://b.scdn.gr/images/sku_main_images/015920/15920310/large_20220112090142_vichy_liftactiv_specialist_50ml.jpeg",
+      "alt": ""
+    },
+    "toPrice": 61.0,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Vichy Neovadiol Post-Menopause Ενυδατική & Αντιγηραντική Κρέμα Προσώπου Ημέρας 50ml",
+    "reviews": {
+      "stars": 4.5,
+      "count": 24
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/031027/31027940/large_20221114123535_vichy_neovadiol_post_menopause_krema_prosopou_imeras_gia_enydatosi_antigiransi_50ml.jpeg",
+      "alt": ""
+    },
+    "toPrice": 26.56,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "La Roche Posay Hyalu B5 Ενυδατική & Αντιγηραντική Κρέμα Προσώπου για Ευαίσθητες Επιδερμίδες με Υαλουρονικό Οξύ 40ml",
+    "reviews": {
+      "stars": 4.2,
+      "count": 65
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/013771/13771555/large_20230223115855_la_roche_posay_hyalu_b5_enydatiki_antigirantiki_krema_prosopou_gia_eyaisthites_epidermides_me_yalouroniko_oxy_40ml.jpeg",
+      "alt": ""
+    },
+    "toPrice": 23.21,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Heremco Histoplastin Red Κρέμα Προσώπου για Ενυδάτωση, Αντιγήρανση & Ανάπλαση 30ml",
+    "reviews": {
+      "stars": 4,
+      "count": 238
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/012380/12380481/large_20220117161047_heremco_histoplastin_red_30ml.jpeg",
+      "alt": ""
+    },
+    "toPrice": 12.13,
+    "link": "",
+    "liked": false
+  }
+]

@@ -3,8 +3,8 @@ import { isEmpty } from "lodash";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const FeatureShowCaseItem = ({
-  image,
   title,
+  image,
   subtitle,
   button,
   showCases,

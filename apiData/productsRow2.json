@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Nef-Nef Loft Κουβέρτα Βελουτέ Υπέρδιπλη 220x240εκ. 22 Pink",
+    "reviews": {
+      "stars": 4.3,
+      "count": 44
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/026231/26231705/fixedratio_20231130134720_nef_nef_loft_kouverta_veloute_yperdipli_220x240ek_029008_22_pink.jpeg",
+      "alt": ""
+    },
+    "toPrice": 61.0,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Nef-Nef Loft Κουβέρτα Βελουτέ Υπέρδιπλη 220x240εκ. Grey",
+    "reviews": {
+      "stars": 4.3,
+      "count": 44
+    },
+    "img": {
+      "src": "https://b.scdn.gr/images/sku_main_images/010725/10725017/fixedratio_20161228162638_nef_nef_yperdipli_veloute_loft_grey.jpeg",
+      "alt": ""
+    },
+    "toPrice": 61.0,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Nef-Nef Loft Κουβέρτα Βελουτέ Υπέρδιπλη 220x240εκ. 1165 Green",
+    "reviews": {
+      "stars": 4.3,
+      "count": 44
+    },
+    "img": {
+      "src": "https://c.scdn.gr/images/sku_main_images/030697/30697973/fixedratio_20231108160655_nef_nef_loft_kouverta_veloute_yperdipli_220x240ek_1165_green.jpeg",
+      "alt": ""
+    },
+    "toPrice": 57.6,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Palamaiki Echo Κουβέρτα Fleece Υπέρδιπλη 220x240εκ. Γκρι",
+    "reviews": {
+      "stars": 4.3,
+      "count": 44
+    },
+    "img": {
+      "src": "https://b.scdn.gr/images/sku_main_images/029016/29016629/fixedratio_20220809155548_palamaiki_echo_kouverta_fleece_yperdipli_220x240ek_gri.jpeg",
+      "alt": ""
+    },
+    "toPrice": 32.8,
+    "link": "",
+    "liked": false
+  },
+  {
+    "title": "Nef-Nef New Golf Κουβέρτα Πικέ Υπέρδιπλη 220x240εκ. Dusty Aqua",
+    "reviews": {
+      "stars": 4.3,
+      "count": 44
+    },
+    "img": {
+      "src": "https://b.scdn.gr/images/sku_main_images/017765/17765990/fixedratio_20200622162900_nef_nef_new_golf_kouverta_pike_yperdipli_220by240_dusty_aqua.jpeg",
+      "alt": ""
+    },
+    "toPrice": 49.5,
+    "link": "",
+    "liked": false
+  }
+]

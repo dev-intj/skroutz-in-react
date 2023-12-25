@@ -62,7 +62,20 @@ const MainSectionConstructor = () => {
           ]}
         />
         <ProductsShowCase
+          id={1}
           title="Κρέμες Ματιών Αντιγήρανσης"
+          redirectButton={false}
+          showStars={false}
+        />
+        <ProductsShowCase
+          id={2}
+          title="Κουβέρτες"
+          redirectButton={false}
+          showStars={false}
+        />
+        <ProductsShowCase
+          id={3}
+          title="Μάσκες Μαλλιών"
           redirectButton={false}
           showStars={false}
         />
