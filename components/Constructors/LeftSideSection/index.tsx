@@ -8,6 +8,10 @@ import PopularSearches from "./PopularSearches";
 import { get } from "lodash";
 import axios from "axios";
 
+// mock data
+import apiDataCategories from "@/apiData/categories.json";
+import apiDataSearches from "@/apiData/searches.json";
+
 const LeftSideSection = () => {
   const [categories, setCategories] = useState<any[]>([]);
 
@@ -17,9 +21,10 @@ const LeftSideSection = () => {
 
   const fetchCategories = async () => {
     try {
-      let api = await axios.get("/api/categories");
+      // let api = await axios.get("/api/categories");
+      // setCategories(get(api, "data.items", []));
 
-      setCategories(get(api, "data.items", []));
+      setCategories([...apiDataCategories]);
     } catch (e) {
       console.error(e);
       setCategories([]);
@@ -28,9 +33,10 @@ const LeftSideSection = () => {
 
   const fetchPopularSearches = async () => {
     try {
-      let api = await axios.get("/api/searches");
+      // let api = await axios.get("/api/searches");
+      // setPopularSearches(get(api, "data.items", []));
 
-      setPopularSearches(get(api, "data.items", []));
+      setPopularSearches([...apiDataSearches]);
     } catch (e) {
       console.error(e);
       setPopularSearches([]);

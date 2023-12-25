@@ -11,6 +11,10 @@ import { get } from "lodash";
 
 import axios from "axios";
 
+import apiDataProductsRow1 from "@/apiData/productsRow1.json";
+import apiDataProductsRow2 from "@/apiData/productsRow2.json";
+import apiDataProductsRow3 from "@/apiData/productsRow3.json";
+
 const ProductsShowCase = ({
   title,
   id,
@@ -21,9 +25,12 @@ const ProductsShowCase = ({
 
   const fetchProducts = async () => {
     try {
-      let api = await axios.get(`/api/search/${id || 1}`);
+      // let api = await axios.get(`/api/search/${id || 1}`);
+      // setProducts(get(api, "data.items", []));
 
-      setProducts(get(api, "data.items", []));
+      if (id == 1) setProducts([...apiDataProductsRow1]);
+      if (id == 2) setProducts([...apiDataProductsRow2]);
+      if (id == 3) setProducts([...apiDataProductsRow3]);
     } catch (e) {
       console.error("error:", e);
       setProducts([]);

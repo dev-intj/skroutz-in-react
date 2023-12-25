@@ -1,18 +1,4 @@
 import { isEmpty, get } from "lodash";
-/* 
-"title": "Frezyderm Diamond Velvet Κρέμα Προσώπου για Ενυδάτωση, Αντιγήρανση & Σύσφιξη με Υαλουρονικό Οξύ 50ml",
-    "reviews": {
-      "stars": 4,
-      "count": 97
-    },
-    "img": {
-      "src": "https://c.scdn.gr/images/sku_main_images/022324/22324570/large_20210302161524_frezyderm_diamond_velvet_anti_wrinkle_cream_50ml.jpeg",
-      "alt": ""
-    },
-    "toPrice": 38.37,
-    "link": "",
-    "liked": false
-*/
 
 const ProductItem = ({
   img,
@@ -21,7 +7,7 @@ const ProductItem = ({
   toPrice,
 }: any) => {
   return (
-    <div className="flex relative flex-col rounded-lg p-0 overflow-hidden border-none w-[14rem]">
+    <div className="flex relative flex-col gap-4 rounded-lg p-0 overflow-hidden border-none max-w-[14rem]">
       {!isEmpty(img) && (
         <a
           className="flex relative items-center justify-center h-auto p-0 rounded-lg max-h-full overflow-hidden aspect-[3/4]
@@ -34,6 +20,11 @@ const ProductItem = ({
           />
         </a>
       )}
+      <div className="flex flex-col justify-between h-1/4 flex-wrap overflow-hidden">
+        <h3 className="text-sm">{title}</h3>
+
+        <h3 className="text-sm">από {toPrice}</h3>
+      </div>
     </div>
   );
 };

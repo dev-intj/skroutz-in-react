@@ -8,14 +8,17 @@ import { get } from "lodash";
 
 import axios from "axios";
 
+import apiDataShowcases from "@/apiData/showcases.json";
+
 const RightHandSection = () => {
   const [showCases, setShowCases] = useState<any[]>([]);
 
   const fetchShowCases = async () => {
     try {
-      let api = await axios.get("/api/showcases");
+      // let api = await axios.get("/api/showcases");
+      // setShowCases(get(api, "data.items", []));
 
-      setShowCases(get(api, "data.items", []));
+      setShowCases([...apiDataShowcases]);
     } catch (e) {
       console.error(e);
       setShowCases([]);
