@@ -38,8 +38,7 @@ const FeatureShowCaseItem = ({
           <button
             className="flex flex-row w-full bg-red-400 items-center rounded-xl px-4 py-2"
             style={{
-              backgroundColor:
-                showCase.backgroundColor,
+              backgroundColor: showCase.backgroundColor,
             }}
           >
             <img

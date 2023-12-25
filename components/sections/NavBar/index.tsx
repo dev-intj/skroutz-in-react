@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -23,8 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 const NavBar = () => {
   const userLoggedIn = true;
 
-  const [isVisible, setIsVisible] =
-    useState(true);
+  const [isVisible, setIsVisible] = useState(true);
 
   const navbarRef = useRef(null);
 
@@ -56,15 +51,9 @@ const NavBar = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener(
-      "scroll",
-      listenToScroll
-    );
+    window.addEventListener("scroll", listenToScroll);
     return () =>
-      window.removeEventListener(
-        "scroll",
-        listenToScroll
-      );
+      window.removeEventListener("scroll", listenToScroll);
   }, []);
 
   const listenToScroll = () => {
@@ -101,9 +90,7 @@ const NavBar = () => {
           {!userLoggedIn && (
             <button>Σύνδεση / Εγγραφή</button>
           )}
-          <AddressSection
-            userLoggedIn={userLoggedIn}
-          />
+          <AddressSection userLoggedIn={userLoggedIn} />
           <LanguagesDropdown />
           {userLoggedIn && (
             <div className="flex flex-row gap-6 justify-between items-center">

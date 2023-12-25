@@ -1,8 +1,6 @@
 import { MapPinIcon } from "@heroicons/react/24/outline";
 
-const AddressSection = ({
-  userLoggedIn,
-}: any) => {
+const AddressSection = ({ userLoggedIn }: any) => {
   return (
     <div className="flex flex-row gap-1 items-center">
       <MapPinIcon className="h-6 w-6 text-gray-600" />

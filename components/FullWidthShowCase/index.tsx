@@ -76,30 +76,28 @@ const CategoriesMode = ({
         </p>
         {!isEmpty(buttons) && (
           <div className="flex flex-row gap-2 py-4 flex-wrap">
-            {buttons.map(
-              (button: any, index: number) => (
-                <a
-                  className="flex flex-row gap-2 border rounded-full pl-1 pr-4 py-1 text-sm text-gray-500 border-gray-200 cursor-pointer"
-                  href={button.link}
-                  key={index}
-                >
-                  {!isEmpty(button.img) && (
-                    <div className="">
-                      <ImportedImage
-                        src={button.img.src}
-                        alt={button.img.alt}
-                        width={"h-12 w-12"}
-                        bgColor=""
-                        imgClass="h-full"
-                      />
-                    </div>
-                  )}
-                  <span className="my-auto">
-                    {button.title}
-                  </span>
-                </a>
-              )
-            )}
+            {buttons.map((button: any, index: number) => (
+              <a
+                className="flex flex-row gap-2 border rounded-full pl-1 pr-4 py-1 text-sm text-gray-500 border-gray-200 cursor-pointer"
+                href={button.link}
+                key={index}
+              >
+                {!isEmpty(button.img) && (
+                  <div className="">
+                    <ImportedImage
+                      src={button.img.src}
+                      alt={button.img.alt}
+                      width={"h-12 w-12"}
+                      bgColor=""
+                      imgClass="h-full"
+                    />
+                  </div>
+                )}
+                <span className="my-auto">
+                  {button.title}
+                </span>
+              </a>
+            ))}
           </div>
         )}
       </div>

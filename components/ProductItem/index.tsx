@@ -9,13 +9,19 @@ const ProductItem = () => {
       </div>
       <div className="h-full flex-col gap-2 bg-blue-400">
         <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="font-bold text-xl mb-2">
+            The Coldest Sunset
+          </div>
         </div>
         <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="font-bold text-xl mb-2">
+            The Coldest Sunset
+          </div>
         </div>
         <div className="px-4 py-4 ">
-          <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <div className="font-bold text-xl mb-2">
+            The Coldest Sunset
+          </div>
         </div>
       </div>
     </div>

@@ -14,11 +14,7 @@ import {
  * above -> go to next invivisible element
  * below -> go to previous invisible element
  */
-function checkVisible(
-  elm: any,
-  threshold: any,
-  mode: any
-) {
+function checkVisible(elm: any, threshold: any, mode: any) {
   threshold = threshold || 0;
   mode = mode || "visible";
 
@@ -28,14 +24,13 @@ function checkVisible(
     window.innerHeight
   );
   var above = rect.bottom - threshold < 0;
-  var below =
-    rect.left - viewHeight + threshold >= 0;
+  var below = rect.left - viewHeight + threshold >= 0;
 
   return mode === "above"
     ? above
     : mode === "below"
-    ? below
-    : !above && !below;
+      ? below
+      : !above && !below;
 }
 
 const changeScrollPosition = (
@@ -44,39 +39,32 @@ const changeScrollPosition = (
 ) => {
   if (containerRef.current) {
     const childrenArr = Array.from(
-      Array(
-        containerRef.current.children.length
-      ).keys()
+      Array(containerRef.current.children.length).keys()
     ).map(
       (item, index) =>
         containerRef?.current?.children[index]
     );
 
-    let newPos = childrenArr.findIndex(
-      (child, index) =>
-        checkVisible(
-          containerRef?.current?.children[index],
-          100,
-          mode
-        )
+    let newPos = childrenArr.findIndex((child, index) =>
+      checkVisible(
+        containerRef?.current?.children[index],
+        100,
+        mode
+      )
     );
 
     if (newPos != -1) {
-      containerRef.current.children[
-        newPos
-      ].scrollIntoView({
+      containerRef.current.children[newPos].scrollIntoView({
         behavior: "smooth",
         block: "nearest",
         inline: "start",
       });
     } else {
-      containerRef.current.children[0].scrollIntoView(
-        {
-          behavior: "smooth",
-          block: "nearest",
-          inline: "start",
-        }
-      );
+      containerRef.current.children[0].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "start",
+      });
     }
   }
 };
@@ -85,8 +73,7 @@ const ReactCarousel = ({
   children,
   className = "flex flex-row gap-4",
 }: any) => {
-  const containerRef =
-    createRef<HTMLDivElement>();
+  const containerRef = createRef<HTMLDivElement>();
 
   return (
     <div className="relative">
@@ -94,18 +81,12 @@ const ReactCarousel = ({
         <ChevronLeftIcon
           className="w-6 h-6"
           onClick={() =>
-            changeScrollPosition(
-              "above",
-              containerRef
-            )
+            changeScrollPosition("above", containerRef)
           }
         />
       </div>
       <div className="relative w-full overflow-x-scroll no-scrollbar">
-        <div
-          className={className}
-          ref={containerRef}
-        >
+        <div className={className} ref={containerRef}>
           {children}
         </div>
       </div>
@@ -113,10 +94,7 @@ const ReactCarousel = ({
         <ChevronRightIcon
           className="w-6 h-6"
           onClick={() =>
-            changeScrollPosition(
-              "below",
-              containerRef
-            )
+            changeScrollPosition("below", containerRef)
           }
         />
       </div>

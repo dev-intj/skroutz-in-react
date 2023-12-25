@@ -18,13 +18,11 @@ const RightHandSection = () => {
           showCases={[
             {
               src: "https://a.scdn.gr/assets/schwartz/supermarkets/mymarket_logo_horizontal_v2.png",
-              backgroundColor:
-                "rgba(19,121,191,0.08)",
+              backgroundColor: "rgba(19,121,191,0.08)",
             },
             {
               src: "https://c.scdn.gr/assets/schwartz/supermarkets/efresh_logo_horizontal_v2.png",
-              backgroundColor:
-                "rgba(135,192,49,0.13)",
+              backgroundColor: "rgba(135,192,49,0.13)",
             },
           ]}
         />

@@ -11,7 +11,9 @@ import axios from "axios";
 const LeftSideSection = () => {
   const [categories, setCategories] = useState<any[]>([]);
 
-  const [popularSearches, setPopularSearches] = useState<any[]>([]);
+  const [popularSearches, setPopularSearches] = useState<
+    any[]
+  >([]);
 
   const fetchCategories = async () => {
     try {

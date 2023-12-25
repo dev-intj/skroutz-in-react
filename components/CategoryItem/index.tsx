@@ -15,10 +15,7 @@ const CategoryItem = ({
   bgColor = "#ffda00",
 }: any) => {
   return (
-    <a
-      href={link}
-      className="flex flex-row gap-3"
-    >
+    <a href={link} className="flex flex-row gap-3">
       {!isEmpty(img) && (
         <div className="">
           <ImportedImage
@@ -28,9 +25,7 @@ const CategoryItem = ({
           />
         </div>
       )}
-      <span className="my-auto text-lg">
-        {title}
-      </span>
+      <span className="my-auto text-lg">{title}</span>
       {arrow && (
         <div className="ml-auto  my-auto">
           <ChevronRightIcon className="h-6 w-6 text-gray-400 mt-1 " />

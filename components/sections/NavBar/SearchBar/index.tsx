@@ -11,13 +11,10 @@ import { Squares2X2Icon } from "@heroicons/react/24/outline";
 import CategoriesModal from "./CategoriesModal";
 
 const SearchBar = ({ width }: any) => {
-  const [search, setSearch] =
-    useState<string>("");
+  const [search, setSearch] = useState<string>("");
 
-  const [
-    categoriesModalOpen,
-    setCategoriesModalOpen,
-  ] = useState<boolean>(false);
+  const [categoriesModalOpen, setCategoriesModalOpen] =
+    useState<boolean>(false);
 
   return (
     <div
@@ -34,9 +31,7 @@ const SearchBar = ({ width }: any) => {
         <input
           className="py-3 w-full !outline-none h-full"
           value={search}
-          onChange={(e) =>
-            setSearch(e.target.value)
-          }
+          onChange={(e) => setSearch(e.target.value)}
         />
         {search != "" && (
           <XMarkIcon
@@ -47,9 +42,7 @@ const SearchBar = ({ width }: any) => {
       </div>
       <div
         className="flex flex-row gap-2 border-l pl-4 py-3 items-center justify-between w-48 pr-4"
-        onClick={() =>
-          setCategoriesModalOpen(true)
-        }
+        onClick={() => setCategoriesModalOpen(true)}
       >
         <Squares2X2Icon className="h-8 w-8 text-gray-600" />
         <span>Κατηγορίες</span>

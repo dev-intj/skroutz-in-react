@@ -16,10 +16,7 @@ const PopularSearches = ({ items }: any) => {
       />
       <div className="flex flex-row gap-3 flex-wrap">
         {items.map((item: any, index: number) => (
-          <PopularSearchesItem
-            key={index}
-            {...item}
-          />
+          <PopularSearchesItem key={index} {...item} />
         ))}
       </div>
     </div>

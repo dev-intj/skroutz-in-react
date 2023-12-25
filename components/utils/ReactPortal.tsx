@@ -16,19 +16,18 @@ const ReactPortal = ({
   wrapperId,
 }: ReactPortalProps) => {
   // Manage state of portal-wrapper.
-  const [wrapper, setWrapper] =
-    useState<Element | null>(null);
+  const [wrapper, setWrapper] = useState<Element | null>(
+    null
+  );
 
   useLayoutEffect(() => {
     // Find the container-element (if exist).
-    let element =
-      document.getElementById(wrapperId);
+    let element = document.getElementById(wrapperId);
     // Bool flag whether container-element has been created.
     let created = false;
     if (!element) {
       created = true;
-      const wrapper =
-        document.createElement("div");
+      const wrapper = document.createElement("div");
       wrapper.setAttribute("id", wrapperId);
       document.body.appendChild(wrapper);
       element = wrapper;
@@ -47,6 +46,5 @@ const ReactPortal = ({
   // Return portal-wrapper component.
   return createPortal(children, wrapper);
 };
-ReactPortal.defaultProps =
-  defaultReactPortalProps;
+ReactPortal.defaultProps = defaultReactPortalProps;
 export default ReactPortal;

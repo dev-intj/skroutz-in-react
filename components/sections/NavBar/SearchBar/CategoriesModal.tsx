@@ -87,27 +87,25 @@ const CategoriesModal = ({
                 ref={modalRef}
               >
                 <div className="flex flex-col gap-6 w-2/5 overflow-y-scroll no-scrollbar">
-                  {Array.from(
-                    Array(10).keys()
-                  ).map((item, index) => (
-                    <CategoryItem
-                      key={index}
-                      arrow={true}
-                    />
-                  ))}
+                  {Array.from(Array(10).keys()).map(
+                    (item, index) => (
+                      <CategoryItem
+                        key={index}
+                        arrow={true}
+                      />
+                    )
+                  )}
                 </div>
                 <div className="px-8 flex flex-col gap-4 w-full">
                   <div className="flex flex-col h-4/6 flex-wrap w-full justify-between">
-                    {Array.from(
-                      Array(8).keys()
-                    ).map((item, index) => (
-                      <FeaturedCategoryItem />
-                    ))}
+                    {Array.from(Array(8).keys()).map(
+                      (item, index) => (
+                        <FeaturedCategoryItem />
+                      )
+                    )}
                   </div>
                   <a className="flex flex-row items-center text-blue-500 gap-2">
-                    <span>
-                      Δες όλες τις κατηγορίες
-                    </span>
+                    <span>Δες όλες τις κατηγορίες</span>
                     <ChevronRightIcon className="h-4 w-4 text-blue-400 mt-1" />
                   </a>
                 </div>
