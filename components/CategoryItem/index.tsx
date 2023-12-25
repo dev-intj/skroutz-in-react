@@ -27,7 +27,7 @@ const CategoryItem = ({
       )}
       <span className="my-auto text-lg">{title}</span>
       {arrow && (
-        <div className="ml-auto  my-auto">
+        <div className="ml-auto my-auto">
           <ChevronRightIcon className="h-6 w-6 text-gray-400 mt-1 " />
         </div>
       )}
