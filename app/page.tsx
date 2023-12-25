@@ -1,8 +1,8 @@
-import Footer from "@/components/sections/Footer";
-import NavBar from "@/components/sections/NavBar";
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
-import LeftSideSection from "@/components/sections/LeftSideSection";
-import RightHandSection from "@/components/sections/RightHandSection";
+import LeftSideSection from "@/components/Constructors/LeftSideSection";
+import RightHandSection from "@/components/Constructors/ShowCaseSection";
 import MainSectionConstructor from "@/components/MainSectionConstructor";
 
 export default function Home() {
