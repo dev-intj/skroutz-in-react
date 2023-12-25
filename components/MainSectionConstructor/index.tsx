@@ -77,7 +77,7 @@ const MainSectionConstructor = () => {
           buttons={[
             {
               img: {
-                src: "//d.scdn.gr/images/sku_main_images/011410/11410175/medium_20221124131022_nef_nef_sentoni_yperdiplo_me_lasticho_160x200x30_jersey_1019_aqua.jpeg",
+                src: "https://d.scdn.gr/images/sku_main_images/011410/11410175/medium_20221124131022_nef_nef_sentoni_yperdiplo_me_lasticho_160x200x30_jersey_1019_aqua.jpeg",
                 alt: "",
               },
               title: "Σεντόνια",
@@ -101,7 +101,7 @@ const MainSectionConstructor = () => {
             },
             {
               img: {
-                src: "//d.scdn.gr/images/sku_main_images/024794/24794089/medium_20200916141356_borea_paplomatothiki_moni_160by240_solid_line_pontiki_mayro.jpeg",
+                src: "https://d.scdn.gr/images/sku_main_images/024794/24794089/medium_20200916141356_borea_paplomatothiki_moni_160by240_solid_line_pontiki_mayro.jpeg",
                 alt: "",
               },
               title: "Παπλωματοθήκες",
