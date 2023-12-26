@@ -71,7 +71,7 @@ const MainSectionConstructor = () => {
           id={2}
           title="Κουβέρτες"
           redirectButton={false}
-          showStars={false}
+          showStars={true}
         />
         <ProductsShowCase
           id={3}

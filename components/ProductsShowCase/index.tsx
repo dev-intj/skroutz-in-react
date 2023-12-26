@@ -19,7 +19,7 @@ const ProductsShowCase = ({
   title,
   id,
   redirectButton,
-  showStars,
+  showStars = false,
 }: any) => {
   const [products, setProducts] = useState<any[]>([]);
 
@@ -57,7 +57,11 @@ const ProductsShowCase = ({
       <div className="relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0">
         <div className="flex flex-row gap-4">
           {products.map((item, index) => (
-            <ProductItem key={index} {...item} />
+            <ProductItem
+              key={index}
+              showStars={showStars}
+              {...item}
+            />
           ))}
         </div>
       </div>
