@@ -1,3 +1,4 @@
+import Stars from "./Stars";
 import { isEmpty, get } from "lodash";
 
 const ProductItem = ({
@@ -31,8 +32,10 @@ const ProductItem = ({
         </span>
         {showStars && (
           <div className="flex flex-row gap-1">
-            <div>stars</div>
-            <span>(1)</span>
+            <Stars count={reviews.stars} />
+            <span className="text-xs text-gray-400 my-auto">
+              ({reviews.count})
+            </span>
           </div>
         )}
         <span className="text-sm">
