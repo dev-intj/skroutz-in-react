@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import ProductItem from "../ProductItem";
-import { HeaderTitle } from "../utils";
+import { HeaderTitle, ReactCarousel } from "../utils";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
@@ -54,17 +54,15 @@ const ProductsShowCase = ({
           </div>
         )}
       </div>
-      <div className="relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0">
-        <div className="flex flex-row gap-4">
-          {products.map((item, index) => (
-            <ProductItem
-              key={index}
-              showStars={showStars}
-              {...item}
-            />
-          ))}
-        </div>
-      </div>
+      <ReactCarousel>
+        {products.map((item, index) => (
+          <ProductItem
+            key={index}
+            showStars={showStars}
+            {...item}
+          />
+        ))}
+      </ReactCarousel>
     </div>
   );
 };

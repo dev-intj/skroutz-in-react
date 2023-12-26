@@ -9,7 +9,7 @@ const ProductItem = ({
   showStars,
 }: any) => {
   return (
-    <div className="flex relative flex-col gap-4 rounded-lg p-0 overflow-hidden border-none max-w-[13rem]">
+    <div className="flex relative flex-col gap-4 rounded-lg p-0 overflow-hidden border-none min-w-[11rem] max-w-[11rem]">
       {!isEmpty(img) && (
         <a
           className="min-h-[20rem] max-h-[20rem] flex relative items-center justify-center h-auto p-0 rounded-lg overflow-hidden aspect-[3/4]
@@ -30,7 +30,7 @@ const ProductItem = ({
         >
           {title}
         </span>
-        {showStars && (
+        {showStars && !isEmpty(reviews) && (
           <div className="flex flex-row gap-1">
             <Stars count={reviews.stars} />
             <span className="text-xs text-gray-400 my-auto">
