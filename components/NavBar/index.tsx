@@ -79,7 +79,7 @@ const NavBar = () => {
       <div className="flex flex-row gap-12 items-center justify-between w-full">
         <div className="relative h-32 min-w-[11rem]">
           <Image
-            src={"./logo.svg"}
+            src={require("@/public/logo.svg")}
             alt="Current Image"
             layout={"fill"}
             objectFit={"contain"}
