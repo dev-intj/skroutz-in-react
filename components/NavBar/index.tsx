@@ -5,6 +5,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Image from "next/image";
+import LogoSVG from "@/public/logo.svg";
+
+import { Logo } from "@/components/utils";
 
 import SearchBar from "./SearchBar";
 import AddressSection from "./AddressSection";
@@ -80,12 +83,13 @@ const NavBar = ({ mode }: any) => {
     >
       <div className="flex flex-row gap-12 items-center justify-between w-full">
         <div className="relative h-32 min-w-[11rem]">
-          <Image
-            src={require("@/public/logo.svg")}
+          {/* <Image
+            src={LogoSVG}
             alt="Current Image"
             layout={"fill"}
             objectFit={"contain"}
-          />
+          /> */}
+          <Logo />
         </div>
         <SearchBar width="w-full" />
         <div className="w-5/6 flex flex-row gap-4 justify-between items-center">

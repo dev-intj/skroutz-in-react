@@ -71,7 +71,7 @@ const tabs = [
 ];
 
 const Page = ({ params, searchParams }: any) => {
-  const [tabOpened, setTabOpened] = useState<any>(null);
+  const [tabOpened, setTabOpened] = useState<any>(tabs[0]);
   const router = useRouter();
 
   useEffect(() => {

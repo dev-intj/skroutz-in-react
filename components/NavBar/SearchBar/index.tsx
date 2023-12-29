@@ -18,7 +18,7 @@ const SearchBar = ({ width }: any) => {
 
   return (
     <div
-      className={`flex flex-row border rounded-3xl relative group hover:border-orange-400 ${width}`}
+      className={`flex flex-row border rounded-3xl bg-white relative group hover:border-orange-400 ${width}`}
     >
       <CategoriesModal
         isOpen={categoriesModalOpen}
