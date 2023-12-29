@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="flex flex-row justify-between px-8 ">
+      <main className="flex flex-row justify-between px-8">
         <LeftSideSection />
         <MainSectionConstructor />
         <RightHandSection />

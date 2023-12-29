@@ -16,7 +16,7 @@ import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NavBar = () => {
+const NavBar = ({ mode }: any) => {
   const userLoggedIn = true;
 
   const [isVisible, setIsVisible] = useState(true);
@@ -74,7 +74,9 @@ const NavBar = () => {
       ref={navbarRef}
       className={`${
         !isVisible && "shadow-xl"
-      } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32`}
+      } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32
+      ${mode === "account" && "bg-[#f8f8f8]"}
+      `}
     >
       <div className="flex flex-row gap-12 items-center justify-between w-full">
         <div className="relative h-32 min-w-[11rem]">
