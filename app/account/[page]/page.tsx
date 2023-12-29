@@ -122,4 +122,15 @@ const Page = ({ params, searchParams }: any) => {
   );
 };
 
+export async function getStaticPaths() {
+  let paths = tabs.map((tab: any) => {
+    return `/account/${tab.link}`;
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
 export default Page;
