@@ -42,7 +42,9 @@ const SearchBar = ({ width }: any) => {
       </div>
       <div
         className="flex flex-row gap-2 border-l pl-4 py-3 items-center justify-between w-48 pr-4"
-        onClick={() => setCategoriesModalOpen(true)}
+        onClick={() =>
+          setCategoriesModalOpen(!categoriesModalOpen)
+        }
       >
         <Squares2X2Icon className="h-8 w-8 text-gray-600" />
         <span>Κατηγορίες</span>

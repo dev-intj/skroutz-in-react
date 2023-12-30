@@ -13,7 +13,7 @@ import SearchBar from "./SearchBar";
 import AddressSection from "./AddressSection";
 import LanguagesDropdown from "./LanguagesDropdown";
 import NotificationsDropdown from "./NotificationsDropdown";
-import UserDropdown from "./UserDropdown";
+import UserDropdown from "./User";
 
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
