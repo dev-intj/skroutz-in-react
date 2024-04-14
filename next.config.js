@@ -4,6 +4,7 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
+  output: "export",
   /**
    * Disable server-based image optimization. Next.js does not support
    * dynamic features with static exports.
