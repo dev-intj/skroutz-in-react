@@ -1,4 +1,4 @@
-const ImportedImage = ({
+const RoundedImage = ({
   src = "/",
   width = "w-12 h-12",
   bgColor = "#ffda00",
@@ -19,4 +19,4 @@ const ImportedImage = ({
   );
 };
 
-export default ImportedImage;
+export default RoundedImage;

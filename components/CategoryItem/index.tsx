@@ -1,5 +1,5 @@
 "use client";
-import { ImportedImage } from "@/components/utils";
+import { RoundedImage } from "@/components/utils";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 import { isEmpty } from "lodash";
@@ -18,7 +18,7 @@ const CategoryItem = ({
     <a href={link} className="flex flex-row gap-3">
       {!isEmpty(img) && (
         <div className="">
-          <ImportedImage
+          <RoundedImage
             src={img.src}
             alt={img.alt}
             bgColor={bgColor}

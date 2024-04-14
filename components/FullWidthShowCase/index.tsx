@@ -3,7 +3,7 @@
 import { isEmpty } from "lodash";
 
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
-import { ImportedImage } from "../utils";
+import { RoundedImage } from "../utils";
 
 // mode = "card" || "categories"
 
@@ -84,7 +84,7 @@ const CategoriesMode = ({
               >
                 {!isEmpty(button.img) && (
                   <div className="">
-                    <ImportedImage
+                    <RoundedImage
                       src={button.img.src}
                       alt={button.img.alt}
                       width={"h-12 w-12"}

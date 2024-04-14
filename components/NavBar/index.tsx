@@ -78,7 +78,7 @@ const NavBar = ({ mode }: any) => {
       className={`${
         !isVisible && "shadow-xl"
       } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32
-      ${mode === "account" && "bg-[#f8f8f8]"}
+      ${mode === "account" && "!bg-[#f8f8f8]"}
       `}
     >
       <div className="flex flex-row gap-12 items-center justify-between w-full">

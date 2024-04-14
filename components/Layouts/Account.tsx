@@ -17,6 +17,7 @@ import {
   Cog6ToothIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
+import AccountHeader from "../Account/AccountHeader";
 
 const tabs = [
   {
@@ -101,8 +102,8 @@ const AccountLayout = ({
   return (
     <>
       <NavBar mode="account" />
-      <main className="flex flex-col gap-12 bg-[#f1f1f1] h-screen">
-        <div className="h-80 bg-[#f8f8f8] rounded-b-[6rem]"></div>
+      <main className="flex flex-col gap-12 bg-[#f1f1f1] h-screen pt-28">
+        <AccountHeader />
         <div className="flex flex-row px-24">
           <div className="flex flex-col gap-2 w-2/6 text-black">
             {tabs.map((tab: any, index: number) => (

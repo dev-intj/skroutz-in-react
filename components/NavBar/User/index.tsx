@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { ImportedImage } from "@/components/utils";
+import { RoundedImage } from "@/components/utils";
 
 import UserDropdown from "./UserDropdown";
 
@@ -10,7 +10,7 @@ const User = () => {
 
   return (
     <div className="relative">
-      <ImportedImage
+      <RoundedImage
         src="https://mdbootstrap.com//img/Photos/Square/1.jpg"
         onClick={() => setIsVisible(!isVisible)}
       />
