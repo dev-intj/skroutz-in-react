@@ -60,7 +60,7 @@ const NavBar = ({ mode }: any) => {
   }, []);
 
   const listenToScroll = () => {
-    let heightToHideFrom = 126 + 5;
+    const heightToHideFrom = 126 + 5;
     const winScroll =
       document.body.scrollTop ||
       document.documentElement.scrollTop;

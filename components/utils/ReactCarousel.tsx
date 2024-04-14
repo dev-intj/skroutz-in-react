@@ -18,13 +18,13 @@ function checkVisible(elm: any, threshold: any, mode: any) {
   threshold = threshold || 0;
   mode = mode || "visible";
 
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(
+  const rect = elm.getBoundingClientRect();
+  const viewHeight = Math.max(
     document.documentElement.clientHeight,
     window.innerHeight
   );
-  var above = rect.bottom - threshold < 0;
-  var below = rect.left - viewHeight + threshold >= 0;
+  const above = rect.bottom - threshold < 0;
+  const below = rect.left - viewHeight + threshold >= 0;
 
   return mode === "above"
     ? above
@@ -45,7 +45,7 @@ const changeScrollPosition = (
         containerRef?.current?.children[index]
     );
 
-    let newPos = childrenArr.findIndex((child, index) =>
+    const newPos = childrenArr.findIndex((child, index) =>
       checkVisible(
         containerRef?.current?.children[index],
         100,

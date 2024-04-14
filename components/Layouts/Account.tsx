@@ -83,7 +83,7 @@ const AccountLayout = ({
 
   useEffect(() => {
     if (pathname != undefined && pathname != null) {
-      let currentRoute = pathname
+      const currentRoute = pathname
         ?.split("?")[0]
         ?.split("/")[2];
       setTabOpened(

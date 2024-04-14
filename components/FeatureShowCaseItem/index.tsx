@@ -34,8 +34,9 @@ const FeatureShowCaseItem = ({
         </button>
       )}
       {!isEmpty(showCases) &&
-        showCases.map((showCase: any) => (
+        showCases.map((showCase: any, index: any) => (
           <button
+            key={index}
             className="flex flex-row w-full bg-red-400 items-center rounded-xl px-4 py-2"
             style={{
               backgroundColor: showCase.backgroundColor,

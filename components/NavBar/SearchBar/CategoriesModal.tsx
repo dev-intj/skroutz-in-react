@@ -100,7 +100,7 @@ const CategoriesModal = ({
                   <div className="flex flex-col h-4/6 flex-wrap w-full justify-between">
                     {Array.from(Array(8).keys()).map(
                       (item, index) => (
-                        <FeaturedCategoryItem />
+                        <FeaturedCategoryItem key={index} />
                       )
                     )}
                   </div>
