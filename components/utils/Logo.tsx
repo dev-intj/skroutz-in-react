@@ -1,16 +1,18 @@
-const Logo = () => {
+const Logo = ({ onClick }: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1330 273.97"
       style={{
         position: "absolute",
-        height: "100%",
         width: "100%",
         inset: "0px",
         objectFit: "contain",
         color: "transparent",
+        height: "100%",
       }}
+      className="hover:cursor-pointer my-auto"
+      onClick={onClick}
     >
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">

@@ -1,25 +1,26 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+
+// gsap
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Image from "next/image";
-import LogoSVG from "@/public/logo.svg";
-
+// components
 import { Logo } from "@/components/utils";
 
+import UserDropdown from "./User";
 import SearchBar from "./SearchBar";
 import AddressSection from "./AddressSection";
 import LanguagesDropdown from "./LanguagesDropdown";
 import NotificationsDropdown from "./NotificationsDropdown";
-import UserDropdown from "./User";
 
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const NavBar = ({ mode }: any) => {
+  const router = useRouter();
   const userLoggedIn = true;
 
   const [isVisible, setIsVisible] = useState(true);
@@ -77,22 +78,16 @@ const NavBar = ({ mode }: any) => {
       ref={navbarRef}
       className={`${
         !isVisible && "shadow-xl"
-      } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-32
+      } z-10 fixed top-0 px-8 3xl:px-72 flex-no-wrap flex w-full items-center justify-between bg-white text-black h-28
       ${mode === "account" && "!bg-[#f8f8f8]"}
       `}
     >
       <div className="flex flex-row gap-12 items-center justify-between w-full">
-        <div className="relative h-32 min-w-[11rem]">
-          {/* <Image
-            src={LogoSVG}
-            alt="Current Image"
-            layout={"fill"}
-            objectFit={"contain"}
-          /> */}
-          <Logo />
+        <div className="relative h-8 min-w-[11rem]">
+          <Logo onClick={() => router.push("/")} />
         </div>
-        <SearchBar width="w-full" />
-        <div className="w-5/6 flex flex-row gap-4 justify-between items-center">
+        <SearchBar width="w-2/6 h-12" />
+        <div className="w-2/6 flex flex-row gap-4 justify-between items-center">
           {!userLoggedIn && (
             <button>Σύνδεση / Εγγραφή</button>
           )}

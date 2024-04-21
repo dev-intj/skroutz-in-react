@@ -26,7 +26,7 @@ const SearchBar = ({ width }: any) => {
       />
       <div className="flex flex-row w-full relative">
         <div className="flex cursor-pointer h-full w-12 pl-4 pr-12 rounded-l-3xl group">
-          <MagnifyingGlassIcon className="h-8 w-8 text-gray-600 absolute top-[25%] mx-auto hover:text-orange-400" />
+          <MagnifyingGlassIcon className="h-6 w-6 text-gray-600 absolute top-[25%] mx-auto hover:text-orange-400" />
         </div>
         <input
           className="py-3 w-full !outline-none h-full"
@@ -35,7 +35,7 @@ const SearchBar = ({ width }: any) => {
         />
         {search != "" && (
           <XMarkIcon
-            className="h-6 w-6 text-gray-600 absolute top-[30%] right-4 cursor-pointer"
+            className="h-6 w-6 text-gray-600 absolute top-[25%] right-4 cursor-pointer"
             onClick={() => setSearch("")}
           />
         )}
@@ -46,9 +46,11 @@ const SearchBar = ({ width }: any) => {
           setCategoriesModalOpen(!categoriesModalOpen)
         }
       >
-        <Squares2X2Icon className="h-8 w-8 text-gray-600" />
-        <span>Κατηγορίες</span>
-        <ChevronDownIcon className="h-6 w-6 text-gray-600 mt-1" />
+        <Squares2X2Icon className="h-6 w-6 text-gray-600" />
+        <span className="text-sm text-gray-500">
+          Κατηγορίες
+        </span>
+        <ChevronDownIcon className="h-4 w-4 mt-1 stroke-gray-500" />
       </div>
     </div>
   );
