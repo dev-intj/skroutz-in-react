@@ -3,7 +3,7 @@
 import { isEmpty } from "lodash";
 
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
-import { RoundedImage } from "../utils";
+import { RoundedImage } from "../../utils";
 
 // mode = "card" || "categories"
 

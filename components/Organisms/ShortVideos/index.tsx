@@ -1,8 +1,8 @@
 "use client";
 
-import ShortVideoItem from "./item";
-import UploadShortVideoItem from "./uploadItem";
-import { ReactCarousel } from "../utils";
+import ShortVideoItem from "../../Atoms/ShortVideoItem";
+import UploadShortVideoItem from "../../Atoms/UploadShortVideoItem";
+import { ReactCarousel } from "../../utils";
 
 import { HeaderTitle } from "@/components/utils";
 import { PlayIcon } from "@heroicons/react/24/solid";

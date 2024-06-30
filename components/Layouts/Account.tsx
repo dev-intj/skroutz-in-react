@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
-import AccountHeader from "../Account/AccountHeader";
+import AccountHeader from "../Organisms/Account/AccountHeader";
 
 import { tabs } from "@/components/utils/tabs";
 

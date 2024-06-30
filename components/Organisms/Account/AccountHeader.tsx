@@ -4,23 +4,10 @@ import {
   StarIcon,
 } from "@heroicons/react/24/outline";
 
-import AccountHeaderLogo from "../utils/accountHeaderLogo";
+import AccountHeaderLogo from "../../utils/accountHeaderLogo";
 // comps
 import AccountHeaderProfileShowcase from "./AccountHeaderProfileShowcase";
-
-const DisplayStats = ({ Icon, label, num }: any) => {
-  return (
-    <div className="flex flex-col gap-2 text-gray-500 px-4 justify-center">
-      <div>
-        <Icon className="w-8 h-8 my-auto text-gray-500 mx-auto" />
-      </div>
-      <span className="text-xs text-center">{label}</span>
-      <span className="text-xl text-center text-black font-bold">
-        {num.toString()}
-      </span>
-    </div>
-  );
-};
+import DisplayStats from "../../Atoms/DisplayStats";
 
 const AccountHeader = () => {
   return (

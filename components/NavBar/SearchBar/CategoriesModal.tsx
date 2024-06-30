@@ -6,7 +6,7 @@ import {
 } from "react";
 import ReactPortal from "@/components/utils/ReactPortal";
 
-import CategoryItem from "@/components/CategoryItem";
+import CategoryItem from "@/components/Organisms/CategoryItem";
 
 import FeaturedCategoryItem from "./FeaturedCategoryItem";
 import FeaturedShowCase from "./FeaturedShowCase";

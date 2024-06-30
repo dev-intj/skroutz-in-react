@@ -1,5 +1,5 @@
 "use client";
-import CategoryItem from "@/components/CategoryItem";
+import CategoryItem from "@/components/Organisms/CategoryItem";
 
 import { HeaderTitle } from "@/components/utils";
 import { ArrowTrendingUpIcon } from "@heroicons/react/24/outline";

@@ -11,7 +11,7 @@ import { Logo } from "@/components/utils";
 
 import UserDropdown from "./User";
 import SearchBar from "./SearchBar";
-import AddressSection from "./AddressSection";
+import AddressSection from "../Molecules/NavBar/AddressSection";
 import LanguagesDropdown from "./LanguagesDropdown";
 import NotificationsDropdown from "./NotificationsDropdown";
 
@@ -86,13 +86,15 @@ const NavBar = ({ mode }: any) => {
         <div className="relative h-8 min-w-[11rem]">
           <Logo onClick={() => router.push("/")} />
         </div>
-        <SearchBar width="w-2/6 h-12" />
+        <SearchBar width="w-2/6 h-12 max-w-[48rem]" />
         <div className="w-2/6 flex flex-row gap-4 justify-between items-center">
           {!userLoggedIn && (
             <button>Σύνδεση / Εγγραφή</button>
           )}
-          <AddressSection userLoggedIn={userLoggedIn} />
-          <LanguagesDropdown />
+          <div className="flex flex-row">
+            <AddressSection userLoggedIn={userLoggedIn} />
+            <LanguagesDropdown />
+          </div>
           {userLoggedIn && (
             <div className="flex flex-row gap-6 justify-between items-center">
               <ShoppingCartIcon className="h-8 w-8 text-gray-600" />

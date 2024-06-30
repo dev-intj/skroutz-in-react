@@ -1,4 +1,4 @@
-import { RoundedImage } from "../utils";
+import { RoundedImage } from "../../utils";
 
 const AccountHeaderProfileShowcase = ({
   username,

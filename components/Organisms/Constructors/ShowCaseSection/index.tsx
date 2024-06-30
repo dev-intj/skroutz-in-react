@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import FeatureShowCaseItem from "@/components/FeatureShowCaseItem";
+import FeatureShowCaseItem from "@/components/Organisms/FeatureShowCaseItem";
 
 import { get } from "lodash";
 

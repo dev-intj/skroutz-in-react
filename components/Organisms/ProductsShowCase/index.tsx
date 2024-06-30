@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import ProductItem from "../ProductItem";
-import { HeaderTitle, ReactCarousel } from "../utils";
+import { HeaderTitle, ReactCarousel } from "../../utils";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 

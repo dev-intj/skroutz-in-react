@@ -1,4 +1,4 @@
-import RoundedImage from "./RoundedImage";
+import RoundedImage from "../Atoms/RoundedImage";
 import ReactPortal from "./ReactPortal";
 import ReactCarousel from "./ReactCarousel";
 import HeaderTitle from "./HeaderTitle";
