@@ -1,6 +1,6 @@
-import FullWidthShowCase from "../../FullWidthShowCase";
+import FullWidthShowCase from "../../ShowCases/FullWidthShowCase";
 import ShortVideos from "../../ShortVideos";
-import ProductsShowCase from "../../ProductsShowCase";
+import ProductsShowCase from "../../Products/ProductsShowCase";
 
 const MainSectionConstructor = () => {
   return (

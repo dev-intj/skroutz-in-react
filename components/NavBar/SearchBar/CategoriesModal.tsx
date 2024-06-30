@@ -6,10 +6,10 @@ import {
 } from "react";
 import ReactPortal from "@/components/utils/ReactPortal";
 
-import CategoryItem from "@/components/Organisms/CategoryItem";
+import CategoryItem from "@/components/Organisms/SearchBar/CategoryItem";
 
-import FeaturedCategoryItem from "./FeaturedCategoryItem";
-import FeaturedShowCase from "./FeaturedShowCase";
+import FeaturedCategoryItem from "../../Molecules/FeaturedCategoryItem";
+import FeaturedShowCaseInSearchBar from "../../Organisms/ShowCases/FeaturedShowCaseInNavbar";
 
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
@@ -110,9 +110,9 @@ const CategoriesModal = ({
                   </a>
                 </div>
                 <div className="px-8 flex flex-col gap-4 w-2/5">
-                  <FeaturedShowCase />
-                  <FeaturedShowCase />
-                  <FeaturedShowCase />
+                  <FeaturedShowCaseInSearchBar />
+                  <FeaturedShowCaseInSearchBar />
+                  <FeaturedShowCaseInSearchBar />
                 </div>
               </div>
             </div>

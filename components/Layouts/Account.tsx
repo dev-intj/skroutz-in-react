@@ -8,6 +8,8 @@ import AccountHeader from "../Organisms/Account/AccountHeader";
 
 import { tabs } from "@/components/utils/tabs";
 
+import TabSelector from "../Organisms/Account/TabSelector";
+
 const AccountLayout = ({
   children,
   params,
@@ -41,31 +43,10 @@ const AccountLayout = ({
       <main className="flex flex-col gap-12 bg-[#f1f1f1] h-screen pt-28">
         <AccountHeader />
         <div className="flex flex-row px-24">
-          <div className="flex flex-col gap-2 w-2/6 text-black">
-            {tabs.map((tab: any, index: number) => (
-              <a
-                className={`flex flex-row gap-4 text-lg cursor-pointer p-4 ${
-                  tabOpened?.label === tab.label
-                    ? "text-black"
-                    : "text-gray-400"
-                }`}
-                key={index}
-                href={tab.link}
-                onClick={(e) =>
-                  onClickTabEntry(e, tab.link)
-                }
-              >
-                <tab.icon
-                  className={`w-6 h-6 my-auto ${
-                    tabOpened?.label === tab.label
-                      ? "text-gray-800"
-                      : "text-gray-400"
-                  }`}
-                ></tab.icon>
-                <span className="my-auto">{tab.label}</span>
-              </a>
-            ))}
-          </div>
+          <TabSelector
+            tabOpened={tabOpened}
+            onClickTabEntry={onClickTabEntry}
+          />
           {children}
         </div>
       </main>

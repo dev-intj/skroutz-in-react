@@ -8,21 +8,11 @@ import ReactPortal from "@/components/utils/ReactPortal";
 import { useRouter } from "next/navigation";
 import { tabs } from "@/components/utils/tabs";
 
+import DropDownItem from "@/components/Atoms/DropDownItem";
+
 type ModalProps = {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
-};
-
-const DropdownItem = ({ tab, onClickTabEntry }: any) => {
-  return (
-    <a
-      className="flex flex-row py-4 px-6 cursor-pointer w-64 text-sm text-black hover:bg-gray-100 hover:text-blue-400"
-      href={tab.link}
-      onClick={(e) => onClickTabEntry(e, tab.link)}
-    >
-      <span className="my-auto">{tab.label}</span>
-    </a>
-  );
 };
 
 const UserDropdown = ({
@@ -105,7 +95,7 @@ const UserDropdown = ({
             >
               <div className="flex flex-col py-4">
                 {tabs.map((tab: any, index: number) => (
-                  <DropdownItem
+                  <DropDownItem
                     tab={tab}
                     key={index}
                     onClickTabEntry={onClickTabEntry}
@@ -113,7 +103,7 @@ const UserDropdown = ({
                 ))}
               </div>
               <div className="border-t">
-                <DropdownItem
+                <DropDownItem
                   tab={{
                     label: "Αποσύνδεση",
                   }}

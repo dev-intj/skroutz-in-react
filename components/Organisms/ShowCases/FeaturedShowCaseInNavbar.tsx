@@ -1,4 +1,4 @@
-const FeaturedShowCase = ({
+const FeaturedShowCaseInSearchBar = ({
   src = "https://a.scdn.gr/ds/mega_menu_banners/images/66/20231215101651_mega_banner_dora_gia_olous_kai_tora_dora.jpg",
 }: any) => {
   return (
@@ -15,4 +15,4 @@ const FeaturedShowCase = ({
   );
 };
 
-export default FeaturedShowCase;
+export default FeaturedShowCaseInSearchBar;

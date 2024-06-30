@@ -11,9 +11,9 @@ import { Logo } from "@/components/utils";
 
 import UserDropdown from "./User";
 import SearchBar from "./SearchBar";
-import AddressSection from "../Molecules/NavBar/AddressSection";
-import LanguagesDropdown from "./LanguagesDropdown";
-import NotificationsDropdown from "./NotificationsDropdown";
+import AddressSection from "../Molecules/AddressDropdown";
+import LanguagesDropdown from "../Molecules/LanguagesDropdown";
+import NotificationsDropdown from "../Atoms/NotificationsDropdown";
 
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 

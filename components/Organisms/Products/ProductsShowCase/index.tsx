@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import ProductItem from "../ProductItem";
-import { HeaderTitle, ReactCarousel } from "../../utils";
+import { HeaderTitle, ReactCarousel } from "../../../utils";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
@@ -42,7 +42,7 @@ const ProductsShowCase = ({
   }, []);
 
   return (
-    <div className="flex flex-col gap-4 px-4 ">
+    <div className="flex flex-col gap-4 px-4">
       <div className="flex flex-row">
         <HeaderTitle title={title} />
         {redirectButton && (
